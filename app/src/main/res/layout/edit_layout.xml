@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hotelCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="6dp"
+    app:cardElevation="4dp">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="1"
+    android:columnCount="5">
+
+    <TextView
+        android:id="@+id/idhotel"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/hotelnameedit"
+        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:text="hotel aname" />
+
+    <TextView
+        android:id="@+id/hotellocation"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Location" />
+
+    <Button
+        android:id="@+id/editbutton"
+        android:text="Edit"
+        android:layout_width="70dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/removebutton"
+        android:text="Remove"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+</GridLayout>
+
+</androidx.cardview.widget.CardView>

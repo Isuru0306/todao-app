@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/menu_home"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.navigate.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_manage"
+        android:name="com.navigate.ui.manage.MangeFragment"
+        android:label="@string/menu_manage"
+        tools:layout="@layout/fragment_mange" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.navigate.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.navigate.ui.about.AboutFragment"
+        android:label="@string/menu_About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.navigate.ui.help.HelpFragment"
+        android:label="@string/menu_Help" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.navigate.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.navigate.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_addhotes"
+        android:name="com.navigate.ui.add.AddHoFragment"
+        android:label="@string/menu_add"
+        tools:layout="@layout/fragment_add_ho" />
+</navigation>
